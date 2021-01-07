@@ -57,6 +57,30 @@ CMAKE_BINARY_DIR = D:\Code\C++\OpenGL\Wavepool\cmake-build-debug
 #=============================================================================
 # Targets provided globally by CMake.
 
+# Special rule for the target install/local
+install\local: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	echo >nul && "D:\Software\Code\CLion\CLion 2019.3.3\bin\cmake\win\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install\local
+
+# Special rule for the target install/local
+install\local\fast: preinstall\fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	echo >nul && "D:\Software\Code\CLion\CLion 2019.3.3\bin\cmake\win\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install\local\fast
+
+# Special rule for the target install
+install: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	echo >nul && "D:\Software\Code\CLion\CLion 2019.3.3\bin\cmake\win\bin\cmake.exe" -P cmake_install.cmake
+.PHONY : install
+
+# Special rule for the target install
+install\fast: preinstall\fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	echo >nul && "D:\Software\Code\CLion\CLion 2019.3.3\bin\cmake\win\bin\cmake.exe" -P cmake_install.cmake
+.PHONY : install\fast
+
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
@@ -78,6 +102,16 @@ rebuild_cache:
 rebuild_cache\fast: rebuild_cache
 
 .PHONY : rebuild_cache\fast
+
+# Special rule for the target list_install_components
+list_install_components:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
+.PHONY : list_install_components
+
+# Special rule for the target list_install_components
+list_install_components\fast: list_install_components
+
+.PHONY : list_install_components\fast
 
 # The main all target
 all: cmake_check_build_system
@@ -124,6 +158,59 @@ Wavepool\fast:
 	$(MAKE) -f CMakeFiles\Wavepool.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Wavepool.dir\build
 .PHONY : Wavepool\fast
 
+#=============================================================================
+# Target rules for targets named uninstall
+
+# Build rule for target.
+uninstall: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) uninstall
+.PHONY : uninstall
+
+# fast build rule for target.
+uninstall\fast:
+	$(MAKE) -f lib\GLFW\CMakeFiles\uninstall.dir\build.make /nologo -$(MAKEFLAGS) lib\GLFW\CMakeFiles\uninstall.dir\build
+.PHONY : uninstall\fast
+
+#=============================================================================
+# Target rules for targets named glfw
+
+# Build rule for target.
+glfw: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) glfw
+.PHONY : glfw
+
+# fast build rule for target.
+glfw\fast:
+	$(MAKE) -f lib\GLFW\src\CMakeFiles\glfw.dir\build.make /nologo -$(MAKEFLAGS) lib\GLFW\src\CMakeFiles\glfw.dir\build
+.PHONY : glfw\fast
+
+lib\GLAD\src\glad.obj: lib\GLAD\src\glad.c.obj
+
+.PHONY : lib\GLAD\src\glad.obj
+
+# target to build an object file
+lib\GLAD\src\glad.c.obj:
+	$(MAKE) -f CMakeFiles\Wavepool.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Wavepool.dir\lib\GLAD\src\glad.c.obj
+.PHONY : lib\GLAD\src\glad.c.obj
+
+lib\GLAD\src\glad.i: lib\GLAD\src\glad.c.i
+
+.PHONY : lib\GLAD\src\glad.i
+
+# target to preprocess a source file
+lib\GLAD\src\glad.c.i:
+	$(MAKE) -f CMakeFiles\Wavepool.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Wavepool.dir\lib\GLAD\src\glad.c.i
+.PHONY : lib\GLAD\src\glad.c.i
+
+lib\GLAD\src\glad.s: lib\GLAD\src\glad.c.s
+
+.PHONY : lib\GLAD\src\glad.s
+
+# target to generate assembly for a file
+lib\GLAD\src\glad.c.s:
+	$(MAKE) -f CMakeFiles\Wavepool.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Wavepool.dir\lib\GLAD\src\glad.c.s
+.PHONY : lib\GLAD\src\glad.c.s
+
 src\main.obj: src\main.cpp.obj
 
 .PHONY : src\main.obj
@@ -158,8 +245,16 @@ help:
 	@echo ... clean
 	@echo ... depend
 	@echo ... Wavepool
+	@echo ... install/local
+	@echo ... install
 	@echo ... edit_cache
 	@echo ... rebuild_cache
+	@echo ... list_install_components
+	@echo ... uninstall
+	@echo ... glfw
+	@echo ... lib/GLAD/src/glad.obj
+	@echo ... lib/GLAD/src/glad.i
+	@echo ... lib/GLAD/src/glad.s
 	@echo ... src/main.obj
 	@echo ... src/main.i
 	@echo ... src/main.s

@@ -1,5 +1,5 @@
 #define GLFW_INCLUDE_NONE
-#include <GL/glew.h>
+#include <glad/glad.h>
 #include <GLFW/glfw3.h>
 #include <iostream>
 
@@ -13,11 +13,6 @@ int main() {
 		return -1;
 	}
 //	std::cout << "About to initialize glew" << std::endl;
-	GLenum err = glewInit();
-	if (err != GLEW_OK) {
-		std::cout << "GLEW initialization failed" << std::endl;
-		return -1;
-	}
 	
 	window = glfwCreateWindow(640, 480, "Hello World", NULL, NULL);
 	if (!window) {
@@ -28,11 +23,16 @@ int main() {
 	
 	glfwMakeContextCurrent(window);
 	
+	int gladInit = gladLoadGLLoader( (GLADloadproc) glfwGetProcAddress);
+	if (!gladInit) {
+		return -1;
+	}
+	
 	while (!glfwWindowShouldClose(window)) {
-//		This is the stupid error. right here. this dumb thing. damn it
-//		glClearColor(GL_COLOR_BUFFER_BIT);
+		//Render here
+		glClear(GL_COLOR_BUFFER_BIT);
 		
-		
+		//Swap front and back buffers
 		glfwSwapBuffers(window);
 		glfwPollEvents();
 	}

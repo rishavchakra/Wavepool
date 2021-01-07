@@ -5,7 +5,7 @@
 		<Option title="Wavepool"/>
 		<Option makefile_is_custom="1"/>
 		<Option compiler="msvc8"/>
-		<Option virtualFolders="CMake Files\;"/>
+		<Option virtualFolders="CMake Files\;CMake Files\lib\;CMake Files\lib\GLFW\;CMake Files\lib\GLFW\src\;"/>
 		<Build>
 			<Target title="all">
 				<Option working_dir="D:/Code/C++/OpenGL/Wavepool/cmake-build-debug"/>
@@ -24,9 +24,9 @@
 				<Option type="1"/>
 				<Option compiler="msvc8"/>
 				<Compiler>
-					<Add directory="D:/Code/C++/OpenGL/Wavepool/headers"/>
+					<Add directory="D:/Code/C++/OpenGL/Wavepool/include"/>
 					<Add directory="D:/Code/C++/OpenGL/Wavepool/lib/GLFW/include"/>
-					<Add directory="D:/Code/C++/OpenGL/Wavepool/lib/glew/include"/>
+					<Add directory="D:/Code/C++/OpenGL/Wavepool/lib/GLAD/include"/>
 					<Add directory="D:\Software\Code\VisualStudio\VC\Tools\MSVC\14.25.28610\ATLMFC\include"/>
 					<Add directory="D:\Software\Code\VisualStudio\VC\Tools\MSVC\14.25.28610\include"/>
 					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\include\um"/>
@@ -50,9 +50,9 @@
 				<Option type="1"/>
 				<Option compiler="msvc8"/>
 				<Compiler>
-					<Add directory="D:/Code/C++/OpenGL/Wavepool/headers"/>
+					<Add directory="D:/Code/C++/OpenGL/Wavepool/include"/>
 					<Add directory="D:/Code/C++/OpenGL/Wavepool/lib/GLFW/include"/>
-					<Add directory="D:/Code/C++/OpenGL/Wavepool/lib/glew/include"/>
+					<Add directory="D:/Code/C++/OpenGL/Wavepool/lib/GLAD/include"/>
 					<Add directory="D:\Software\Code\VisualStudio\VC\Tools\MSVC\14.25.28610\ATLMFC\include"/>
 					<Add directory="D:\Software\Code\VisualStudio\VC\Tools\MSVC\14.25.28610\include"/>
 					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\include\um"/>
@@ -64,6 +64,26 @@
 				</Compiler>
 				<MakeCommands>
 					<Build command="nmake /NOLOGO /f D:\Code\C++\OpenGL\Wavepool\cmake-build-debug\Makefile VERBOSE=1 Wavepool/fast"/>
+					<CompileFile command="nmake /NOLOGO /f D:\Code\C++\OpenGL\Wavepool\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f D:\Code\C++\OpenGL\Wavepool\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f D:\Code\C++\OpenGL\Wavepool\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="install/local">
+				<Option working_dir="D:/Code/C++/OpenGL/Wavepool/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f D:\Code\C++\OpenGL\Wavepool\cmake-build-debug\Makefile VERBOSE=1 install/local"/>
+					<CompileFile command="nmake /NOLOGO /f D:\Code\C++\OpenGL\Wavepool\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f D:\Code\C++\OpenGL\Wavepool\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f D:\Code\C++\OpenGL\Wavepool\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="install">
+				<Option working_dir="D:/Code/C++/OpenGL/Wavepool/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f D:\Code\C++\OpenGL\Wavepool\cmake-build-debug\Makefile VERBOSE=1 install"/>
 					<CompileFile command="nmake /NOLOGO /f D:\Code\C++\OpenGL\Wavepool\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="nmake /NOLOGO /f D:\Code\C++\OpenGL\Wavepool\cmake-build-debug\Makefile VERBOSE=1 clean"/>
 					<DistClean command="nmake /NOLOGO /f D:\Code\C++\OpenGL\Wavepool\cmake-build-debug\Makefile VERBOSE=1 clean"/>
@@ -89,12 +109,190 @@
 					<DistClean command="nmake /NOLOGO /f D:\Code\C++\OpenGL\Wavepool\cmake-build-debug\Makefile VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
+			<Target title="list_install_components">
+				<Option working_dir="D:/Code/C++/OpenGL/Wavepool/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f D:\Code\C++\OpenGL\Wavepool\cmake-build-debug\Makefile VERBOSE=1 list_install_components"/>
+					<CompileFile command="nmake /NOLOGO /f D:\Code\C++\OpenGL\Wavepool\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f D:\Code\C++\OpenGL\Wavepool\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f D:\Code\C++\OpenGL\Wavepool\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="uninstall">
+				<Option working_dir="D:/Code/C++/OpenGL/Wavepool/cmake-build-debug/lib/GLFW"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f D:\Code\C++\OpenGL\Wavepool\cmake-build-debug\lib\GLFW\Makefile VERBOSE=1 uninstall"/>
+					<CompileFile command="nmake /NOLOGO /f D:\Code\C++\OpenGL\Wavepool\cmake-build-debug\lib\GLFW\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f D:\Code\C++\OpenGL\Wavepool\cmake-build-debug\lib\GLFW\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f D:\Code\C++\OpenGL\Wavepool\cmake-build-debug\lib\GLFW\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="glfw">
+				<Option output="D:/Code/C++/OpenGL/Wavepool/cmake-build-debug/lib/GLFW/src/glfw3.lib" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Code/C++/OpenGL/Wavepool/cmake-build-debug/lib/GLFW/src"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add option="-D_GLFW_USE_CONFIG_H"/>
+					<Add option="-D_UNICODE"/>
+					<Add option="-D_CRT_SECURE_NO_WARNINGS"/>
+					<Add directory="D:/Code/C++/OpenGL/Wavepool/include"/>
+					<Add directory="D:/Code/C++/OpenGL/Wavepool/lib/GLFW/include"/>
+					<Add directory="D:/Code/C++/OpenGL/Wavepool/lib/GLAD/include"/>
+					<Add directory="D:/Code/C++/OpenGL/Wavepool/lib/GLFW/src"/>
+					<Add directory="D:/Code/C++/OpenGL/Wavepool/cmake-build-debug/lib/GLFW/src"/>
+					<Add directory="D:\Software\Code\VisualStudio\VC\Tools\MSVC\14.25.28610\ATLMFC\include"/>
+					<Add directory="D:\Software\Code\VisualStudio\VC\Tools\MSVC\14.25.28610\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\include\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f D:\Code\C++\OpenGL\Wavepool\cmake-build-debug\lib\GLFW\src\Makefile VERBOSE=1 glfw"/>
+					<CompileFile command="nmake /NOLOGO /f D:\Code\C++\OpenGL\Wavepool\cmake-build-debug\lib\GLFW\src\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f D:\Code\C++\OpenGL\Wavepool\cmake-build-debug\lib\GLFW\src\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f D:\Code\C++\OpenGL\Wavepool\cmake-build-debug\lib\GLFW\src\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="glfw/fast">
+				<Option output="D:/Code/C++/OpenGL/Wavepool/cmake-build-debug/lib/GLFW/src/glfw3.lib" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Code/C++/OpenGL/Wavepool/cmake-build-debug/lib/GLFW/src"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add option="-D_GLFW_USE_CONFIG_H"/>
+					<Add option="-D_UNICODE"/>
+					<Add option="-D_CRT_SECURE_NO_WARNINGS"/>
+					<Add directory="D:/Code/C++/OpenGL/Wavepool/include"/>
+					<Add directory="D:/Code/C++/OpenGL/Wavepool/lib/GLFW/include"/>
+					<Add directory="D:/Code/C++/OpenGL/Wavepool/lib/GLAD/include"/>
+					<Add directory="D:/Code/C++/OpenGL/Wavepool/lib/GLFW/src"/>
+					<Add directory="D:/Code/C++/OpenGL/Wavepool/cmake-build-debug/lib/GLFW/src"/>
+					<Add directory="D:\Software\Code\VisualStudio\VC\Tools\MSVC\14.25.28610\ATLMFC\include"/>
+					<Add directory="D:\Software\Code\VisualStudio\VC\Tools\MSVC\14.25.28610\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\include\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f D:\Code\C++\OpenGL\Wavepool\cmake-build-debug\lib\GLFW\src\Makefile VERBOSE=1 glfw/fast"/>
+					<CompileFile command="nmake /NOLOGO /f D:\Code\C++\OpenGL\Wavepool\cmake-build-debug\lib\GLFW\src\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f D:\Code\C++\OpenGL\Wavepool\cmake-build-debug\lib\GLFW\src\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f D:\Code\C++\OpenGL\Wavepool\cmake-build-debug\lib\GLFW\src\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
 		</Build>
+		<Unit filename="D:/Code/C++/OpenGL/Wavepool/cmake-build-debug/lib/GLFW/src/glfw_config.h">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="D:/Code/C++/OpenGL/Wavepool/lib/GLAD/src/glad.c">
+			<Option target="Wavepool"/>
+		</Unit>
+		<Unit filename="D:/Code/C++/OpenGL/Wavepool/lib/GLFW/include/GLFW/glfw3.h">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="D:/Code/C++/OpenGL/Wavepool/lib/GLFW/include/GLFW/glfw3native.h">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="D:/Code/C++/OpenGL/Wavepool/lib/GLFW/src/context.c">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="D:/Code/C++/OpenGL/Wavepool/lib/GLFW/src/egl_context.c">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="D:/Code/C++/OpenGL/Wavepool/lib/GLFW/src/egl_context.h">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="D:/Code/C++/OpenGL/Wavepool/lib/GLFW/src/init.c">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="D:/Code/C++/OpenGL/Wavepool/lib/GLFW/src/input.c">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="D:/Code/C++/OpenGL/Wavepool/lib/GLFW/src/internal.h">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="D:/Code/C++/OpenGL/Wavepool/lib/GLFW/src/mappings.h">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="D:/Code/C++/OpenGL/Wavepool/lib/GLFW/src/monitor.c">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="D:/Code/C++/OpenGL/Wavepool/lib/GLFW/src/osmesa_context.c">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="D:/Code/C++/OpenGL/Wavepool/lib/GLFW/src/osmesa_context.h">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="D:/Code/C++/OpenGL/Wavepool/lib/GLFW/src/vulkan.c">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="D:/Code/C++/OpenGL/Wavepool/lib/GLFW/src/wgl_context.c">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="D:/Code/C++/OpenGL/Wavepool/lib/GLFW/src/wgl_context.h">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="D:/Code/C++/OpenGL/Wavepool/lib/GLFW/src/win32_init.c">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="D:/Code/C++/OpenGL/Wavepool/lib/GLFW/src/win32_joystick.c">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="D:/Code/C++/OpenGL/Wavepool/lib/GLFW/src/win32_joystick.h">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="D:/Code/C++/OpenGL/Wavepool/lib/GLFW/src/win32_monitor.c">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="D:/Code/C++/OpenGL/Wavepool/lib/GLFW/src/win32_platform.h">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="D:/Code/C++/OpenGL/Wavepool/lib/GLFW/src/win32_thread.c">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="D:/Code/C++/OpenGL/Wavepool/lib/GLFW/src/win32_time.c">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="D:/Code/C++/OpenGL/Wavepool/lib/GLFW/src/win32_window.c">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="D:/Code/C++/OpenGL/Wavepool/lib/GLFW/src/window.c">
+			<Option target="glfw"/>
+		</Unit>
 		<Unit filename="D:/Code/C++/OpenGL/Wavepool/src/main.cpp">
 			<Option target="Wavepool"/>
 		</Unit>
 		<Unit filename="D:/Code/C++/OpenGL/Wavepool/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="D:/Code/C++/OpenGL/Wavepool/lib/GLFW/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\lib\GLFW\"/>
+		</Unit>
+		<Unit filename="D:/Code/C++/OpenGL/Wavepool/lib/GLFW/cmake_uninstall.cmake.in">
+			<Option virtualFolder="CMake Files\lib\GLFW\"/>
+		</Unit>
+		<Unit filename="D:/Code/C++/OpenGL/Wavepool/lib/GLFW/src/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\lib\GLFW\src\"/>
+		</Unit>
+		<Unit filename="D:/Code/C++/OpenGL/Wavepool/lib/GLFW/src/glfw3.pc.in">
+			<Option virtualFolder="CMake Files\lib\GLFW\src\"/>
+		</Unit>
+		<Unit filename="D:/Code/C++/OpenGL/Wavepool/lib/GLFW/src/glfw3Config.cmake.in">
+			<Option virtualFolder="CMake Files\lib\GLFW\src\"/>
+		</Unit>
+		<Unit filename="D:/Code/C++/OpenGL/Wavepool/lib/GLFW/src/glfw_config.h.in">
+			<Option virtualFolder="CMake Files\lib\GLFW\src\"/>
 		</Unit>
 	</Project>
 </CodeBlocks_project_file>

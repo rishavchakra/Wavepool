@@ -55,16 +55,18 @@ CMAKE_BINARY_DIR = D:\Code\C++\OpenGL\Wavepool\cmake-build-debug
 
 # The main recursive "all" target.
 all: CMakeFiles\Wavepool.dir\all
+all: lib\GLFW\all
 
 .PHONY : all
 
 # The main recursive "clean" target.
 clean: CMakeFiles\Wavepool.dir\clean
+clean: lib\GLFW\clean
 
 .PHONY : clean
 
 # The main recursive "preinstall" target.
-preinstall:
+preinstall: lib\GLFW\preinstall
 
 .PHONY : preinstall
 
@@ -72,15 +74,15 @@ preinstall:
 # Target rules for target CMakeFiles/Wavepool.dir
 
 # All Build rule for target.
-CMakeFiles\Wavepool.dir\all:
+CMakeFiles\Wavepool.dir\all: lib\GLFW\src\CMakeFiles\glfw.dir\all
 	$(MAKE) -f CMakeFiles\Wavepool.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Wavepool.dir\depend
 	$(MAKE) -f CMakeFiles\Wavepool.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Wavepool.dir\build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\Code\C++\OpenGL\Wavepool\cmake-build-debug\CMakeFiles --progress-num=1,2 "Built target Wavepool"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\Code\C++\OpenGL\Wavepool\cmake-build-debug\CMakeFiles --progress-num=1,2,3 "Built target Wavepool"
 .PHONY : CMakeFiles\Wavepool.dir\all
 
 # Build rule for subdir invocation for target.
 CMakeFiles\Wavepool.dir\rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start D:\Code\C++\OpenGL\Wavepool\cmake-build-debug\CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\Code\C++\OpenGL\Wavepool\cmake-build-debug\CMakeFiles 19
 	$(MAKE) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) CMakeFiles\Wavepool.dir\all
 	$(CMAKE_COMMAND) -E cmake_progress_start D:\Code\C++\OpenGL\Wavepool\cmake-build-debug\CMakeFiles 0
 .PHONY : CMakeFiles\Wavepool.dir\rule
@@ -94,6 +96,97 @@ Wavepool: CMakeFiles\Wavepool.dir\rule
 CMakeFiles\Wavepool.dir\clean:
 	$(MAKE) -f CMakeFiles\Wavepool.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Wavepool.dir\clean
 .PHONY : CMakeFiles\Wavepool.dir\clean
+
+#=============================================================================
+# Directory level rules for directory lib\GLFW
+
+# Recursive "all" directory target.
+lib\GLFW\all: lib\GLFW\src\all
+
+.PHONY : lib\GLFW\all
+
+# Recursive "clean" directory target.
+lib\GLFW\clean: lib\GLFW\CMakeFiles\uninstall.dir\clean
+lib\GLFW\clean: lib\GLFW\src\clean
+
+.PHONY : lib\GLFW\clean
+
+# Recursive "preinstall" directory target.
+lib\GLFW\preinstall: lib\GLFW\src\preinstall
+
+.PHONY : lib\GLFW\preinstall
+
+#=============================================================================
+# Target rules for target lib/GLFW/CMakeFiles/uninstall.dir
+
+# All Build rule for target.
+lib\GLFW\CMakeFiles\uninstall.dir\all:
+	$(MAKE) -f lib\GLFW\CMakeFiles\uninstall.dir\build.make /nologo -$(MAKEFLAGS) lib\GLFW\CMakeFiles\uninstall.dir\depend
+	$(MAKE) -f lib\GLFW\CMakeFiles\uninstall.dir\build.make /nologo -$(MAKEFLAGS) lib\GLFW\CMakeFiles\uninstall.dir\build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\Code\C++\OpenGL\Wavepool\cmake-build-debug\CMakeFiles --progress-num= "Built target uninstall"
+.PHONY : lib\GLFW\CMakeFiles\uninstall.dir\all
+
+# Build rule for subdir invocation for target.
+lib\GLFW\CMakeFiles\uninstall.dir\rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\Code\C++\OpenGL\Wavepool\cmake-build-debug\CMakeFiles 0
+	$(MAKE) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) lib\GLFW\CMakeFiles\uninstall.dir\all
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\Code\C++\OpenGL\Wavepool\cmake-build-debug\CMakeFiles 0
+.PHONY : lib\GLFW\CMakeFiles\uninstall.dir\rule
+
+# Convenience name for target.
+uninstall: lib\GLFW\CMakeFiles\uninstall.dir\rule
+
+.PHONY : uninstall
+
+# clean rule for target.
+lib\GLFW\CMakeFiles\uninstall.dir\clean:
+	$(MAKE) -f lib\GLFW\CMakeFiles\uninstall.dir\build.make /nologo -$(MAKEFLAGS) lib\GLFW\CMakeFiles\uninstall.dir\clean
+.PHONY : lib\GLFW\CMakeFiles\uninstall.dir\clean
+
+#=============================================================================
+# Directory level rules for directory lib\GLFW\src
+
+# Recursive "all" directory target.
+lib\GLFW\src\all: lib\GLFW\src\CMakeFiles\glfw.dir\all
+
+.PHONY : lib\GLFW\src\all
+
+# Recursive "clean" directory target.
+lib\GLFW\src\clean: lib\GLFW\src\CMakeFiles\glfw.dir\clean
+
+.PHONY : lib\GLFW\src\clean
+
+# Recursive "preinstall" directory target.
+lib\GLFW\src\preinstall:
+
+.PHONY : lib\GLFW\src\preinstall
+
+#=============================================================================
+# Target rules for target lib/GLFW/src/CMakeFiles/glfw.dir
+
+# All Build rule for target.
+lib\GLFW\src\CMakeFiles\glfw.dir\all:
+	$(MAKE) -f lib\GLFW\src\CMakeFiles\glfw.dir\build.make /nologo -$(MAKEFLAGS) lib\GLFW\src\CMakeFiles\glfw.dir\depend
+	$(MAKE) -f lib\GLFW\src\CMakeFiles\glfw.dir\build.make /nologo -$(MAKEFLAGS) lib\GLFW\src\CMakeFiles\glfw.dir\build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\Code\C++\OpenGL\Wavepool\cmake-build-debug\CMakeFiles --progress-num=4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19 "Built target glfw"
+.PHONY : lib\GLFW\src\CMakeFiles\glfw.dir\all
+
+# Build rule for subdir invocation for target.
+lib\GLFW\src\CMakeFiles\glfw.dir\rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\Code\C++\OpenGL\Wavepool\cmake-build-debug\CMakeFiles 16
+	$(MAKE) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) lib\GLFW\src\CMakeFiles\glfw.dir\all
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\Code\C++\OpenGL\Wavepool\cmake-build-debug\CMakeFiles 0
+.PHONY : lib\GLFW\src\CMakeFiles\glfw.dir\rule
+
+# Convenience name for target.
+glfw: lib\GLFW\src\CMakeFiles\glfw.dir\rule
+
+.PHONY : glfw
+
+# clean rule for target.
+lib\GLFW\src\CMakeFiles\glfw.dir\clean:
+	$(MAKE) -f lib\GLFW\src\CMakeFiles\glfw.dir\build.make /nologo -$(MAKEFLAGS) lib\GLFW\src\CMakeFiles\glfw.dir\clean
+.PHONY : lib\GLFW\src\CMakeFiles\glfw.dir\clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.
