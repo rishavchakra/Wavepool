@@ -1,0 +1,1 @@
+C:\PROGRA~1\LLVM\bin\clang.exe -nostartfiles -nostdlib  -g -Xclang -gcodeview -O0 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd  -shared -o ..\..\bin\glewd.dll  -Xlinker /implib:..\glewd.lib -Xlinker /pdb:D:\Code\C++\OpenGL\Wavepool\cmake-build-debug\bin\glewd.pdb -Xlinker /version:2.2 @CMakeFiles\libglew_shared.dir\objects1.rsp @CMakeFiles\libglew_shared.dir\linklibs.rsp

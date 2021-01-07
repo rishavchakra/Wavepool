@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="glew"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="msvc8"/>
+		<Option virtualFolders="CMake Files\;CMake Files\lib\;CMake Files\lib\glew-cmake\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="D:/Code/C++/OpenGL/Wavepool/cmake-build-debug/lib/glew-cmake"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f D:\Code\C++\OpenGL\Wavepool\cmake-build-debug\lib\glew-cmake\Makefile VERBOSE=1 all"/>
+					<CompileFile command="nmake /NOLOGO /f D:\Code\C++\OpenGL\Wavepool\cmake-build-debug\lib\glew-cmake\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f D:\Code\C++\OpenGL\Wavepool\cmake-build-debug\lib\glew-cmake\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f D:\Code\C++\OpenGL\Wavepool\cmake-build-debug\lib\glew-cmake\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="libglew_static">
+				<Option output="D:/Code/C++/OpenGL/Wavepool/cmake-build-debug/lib/glewd.lib" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Code/C++/OpenGL/Wavepool/cmake-build-debug/lib/glew-cmake"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add option="-DGLEW_STATIC"/>
+					<Add option="-DWIN32_MEAN_AND_LEAN"/>
+					<Add option="-DVC_EXTRALEAN"/>
+					<Add option="-D_CRT_SECURE_NO_WARNINGS"/>
+					<Add option="-DGLEW_NO_GLU"/>
+					<Add directory="D:/Code/C++/OpenGL/Wavepool/headers"/>
+					<Add directory="D:/Code/C++/OpenGL/Wavepool/lib/GLFW/include"/>
+					<Add directory="D:/Code/C++/OpenGL/Wavepool/lib/glew-cmake/include"/>
+					<Add directory="D:\Software\Code\VisualStudio\VC\Tools\MSVC\14.25.28610\ATLMFC\include"/>
+					<Add directory="D:\Software\Code\VisualStudio\VC\Tools\MSVC\14.25.28610\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\include\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f D:\Code\C++\OpenGL\Wavepool\cmake-build-debug\lib\glew-cmake\Makefile VERBOSE=1 libglew_static"/>
+					<CompileFile command="nmake /NOLOGO /f D:\Code\C++\OpenGL\Wavepool\cmake-build-debug\lib\glew-cmake\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f D:\Code\C++\OpenGL\Wavepool\cmake-build-debug\lib\glew-cmake\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f D:\Code\C++\OpenGL\Wavepool\cmake-build-debug\lib\glew-cmake\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="libglew_static/fast">
+				<Option output="D:/Code/C++/OpenGL/Wavepool/cmake-build-debug/lib/glewd.lib" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Code/C++/OpenGL/Wavepool/cmake-build-debug/lib/glew-cmake"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add option="-DGLEW_STATIC"/>
+					<Add option="-DWIN32_MEAN_AND_LEAN"/>
+					<Add option="-DVC_EXTRALEAN"/>
+					<Add option="-D_CRT_SECURE_NO_WARNINGS"/>
+					<Add option="-DGLEW_NO_GLU"/>
+					<Add directory="D:/Code/C++/OpenGL/Wavepool/headers"/>
+					<Add directory="D:/Code/C++/OpenGL/Wavepool/lib/GLFW/include"/>
+					<Add directory="D:/Code/C++/OpenGL/Wavepool/lib/glew-cmake/include"/>
+					<Add directory="D:\Software\Code\VisualStudio\VC\Tools\MSVC\14.25.28610\ATLMFC\include"/>
+					<Add directory="D:\Software\Code\VisualStudio\VC\Tools\MSVC\14.25.28610\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\include\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f D:\Code\C++\OpenGL\Wavepool\cmake-build-debug\lib\glew-cmake\Makefile VERBOSE=1 libglew_static/fast"/>
+					<CompileFile command="nmake /NOLOGO /f D:\Code\C++\OpenGL\Wavepool\cmake-build-debug\lib\glew-cmake\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f D:\Code\C++\OpenGL\Wavepool\cmake-build-debug\lib\glew-cmake\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f D:\Code\C++\OpenGL\Wavepool\cmake-build-debug\lib\glew-cmake\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="libglew_shared">
+				<Option output="D:/Code/C++/OpenGL/Wavepool/cmake-build-debug/bin/glewd.dll" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Code/C++/OpenGL/Wavepool/cmake-build-debug/lib/glew-cmake"/>
+				<Option object_output="./"/>
+				<Option type="3"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add option="-DGLEW_BUILD"/>
+					<Add option="-DWIN32_MEAN_AND_LEAN"/>
+					<Add option="-DVC_EXTRALEAN"/>
+					<Add option="-D_CRT_SECURE_NO_WARNINGS"/>
+					<Add option="-DGLEW_NO_GLU"/>
+					<Add directory="D:/Code/C++/OpenGL/Wavepool/headers"/>
+					<Add directory="D:/Code/C++/OpenGL/Wavepool/lib/GLFW/include"/>
+					<Add directory="D:/Code/C++/OpenGL/Wavepool/lib/glew-cmake/include"/>
+					<Add directory="D:\Software\Code\VisualStudio\VC\Tools\MSVC\14.25.28610\ATLMFC\include"/>
+					<Add directory="D:\Software\Code\VisualStudio\VC\Tools\MSVC\14.25.28610\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\include\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f D:\Code\C++\OpenGL\Wavepool\cmake-build-debug\lib\glew-cmake\Makefile VERBOSE=1 libglew_shared"/>
+					<CompileFile command="nmake /NOLOGO /f D:\Code\C++\OpenGL\Wavepool\cmake-build-debug\lib\glew-cmake\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f D:\Code\C++\OpenGL\Wavepool\cmake-build-debug\lib\glew-cmake\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f D:\Code\C++\OpenGL\Wavepool\cmake-build-debug\lib\glew-cmake\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="libglew_shared/fast">
+				<Option output="D:/Code/C++/OpenGL/Wavepool/cmake-build-debug/bin/glewd.dll" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Code/C++/OpenGL/Wavepool/cmake-build-debug/lib/glew-cmake"/>
+				<Option object_output="./"/>
+				<Option type="3"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add option="-DGLEW_BUILD"/>
+					<Add option="-DWIN32_MEAN_AND_LEAN"/>
+					<Add option="-DVC_EXTRALEAN"/>
+					<Add option="-D_CRT_SECURE_NO_WARNINGS"/>
+					<Add option="-DGLEW_NO_GLU"/>
+					<Add directory="D:/Code/C++/OpenGL/Wavepool/headers"/>
+					<Add directory="D:/Code/C++/OpenGL/Wavepool/lib/GLFW/include"/>
+					<Add directory="D:/Code/C++/OpenGL/Wavepool/lib/glew-cmake/include"/>
+					<Add directory="D:\Software\Code\VisualStudio\VC\Tools\MSVC\14.25.28610\ATLMFC\include"/>
+					<Add directory="D:\Software\Code\VisualStudio\VC\Tools\MSVC\14.25.28610\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\include\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f D:\Code\C++\OpenGL\Wavepool\cmake-build-debug\lib\glew-cmake\Makefile VERBOSE=1 libglew_shared/fast"/>
+					<CompileFile command="nmake /NOLOGO /f D:\Code\C++\OpenGL\Wavepool\cmake-build-debug\lib\glew-cmake\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f D:\Code\C++\OpenGL\Wavepool\cmake-build-debug\lib\glew-cmake\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f D:\Code\C++\OpenGL\Wavepool\cmake-build-debug\lib\glew-cmake\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="D:/Code/C++/OpenGL/Wavepool/lib/glew-cmake/build/glew.rc">
+			<Option target="libglew_static"/>
+			<Option target="libglew_shared"/>
+		</Unit>
+		<Unit filename="D:/Code/C++/OpenGL/Wavepool/lib/glew-cmake/src/glew.c">
+			<Option target="libglew_static"/>
+			<Option target="libglew_shared"/>
+		</Unit>
+		<Unit filename="D:/Code/C++/OpenGL/Wavepool/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="D:/Code/C++/OpenGL/Wavepool/lib/glew-cmake/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\lib\glew-cmake\"/>
+		</Unit>
+		<Unit filename="D:/Code/C++/OpenGL/Wavepool/lib/glew-cmake/GeneratePkgConfig.cmake">
+			<Option virtualFolder="CMake Files\lib\glew-cmake\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
