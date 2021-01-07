@@ -26,6 +26,9 @@ include_directories(include)
 include_directories(lib/GLFW/include)
 include_directories(lib/GLAD/include)
 
+#Networking libraries
+include_directories(lib/asio/include)
+
 
 #[[         Linking Libraries           ]]
 #Graphics libraries

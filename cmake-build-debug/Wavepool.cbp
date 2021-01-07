@@ -27,6 +27,7 @@
 					<Add directory="D:/Code/C++/OpenGL/Wavepool/include"/>
 					<Add directory="D:/Code/C++/OpenGL/Wavepool/lib/GLFW/include"/>
 					<Add directory="D:/Code/C++/OpenGL/Wavepool/lib/GLAD/include"/>
+					<Add directory="D:/Code/C++/OpenGL/Wavepool/lib/asio/include"/>
 					<Add directory="D:\Software\Code\VisualStudio\VC\Tools\MSVC\14.25.28610\ATLMFC\include"/>
 					<Add directory="D:\Software\Code\VisualStudio\VC\Tools\MSVC\14.25.28610\include"/>
 					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\include\um"/>
@@ -53,6 +54,7 @@
 					<Add directory="D:/Code/C++/OpenGL/Wavepool/include"/>
 					<Add directory="D:/Code/C++/OpenGL/Wavepool/lib/GLFW/include"/>
 					<Add directory="D:/Code/C++/OpenGL/Wavepool/lib/GLAD/include"/>
+					<Add directory="D:/Code/C++/OpenGL/Wavepool/lib/asio/include"/>
 					<Add directory="D:\Software\Code\VisualStudio\VC\Tools\MSVC\14.25.28610\ATLMFC\include"/>
 					<Add directory="D:\Software\Code\VisualStudio\VC\Tools\MSVC\14.25.28610\include"/>
 					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\include\um"/>
@@ -142,6 +144,7 @@
 					<Add directory="D:/Code/C++/OpenGL/Wavepool/include"/>
 					<Add directory="D:/Code/C++/OpenGL/Wavepool/lib/GLFW/include"/>
 					<Add directory="D:/Code/C++/OpenGL/Wavepool/lib/GLAD/include"/>
+					<Add directory="D:/Code/C++/OpenGL/Wavepool/lib/asio/include"/>
 					<Add directory="D:/Code/C++/OpenGL/Wavepool/lib/GLFW/src"/>
 					<Add directory="D:/Code/C++/OpenGL/Wavepool/cmake-build-debug/lib/GLFW/src"/>
 					<Add directory="D:\Software\Code\VisualStudio\VC\Tools\MSVC\14.25.28610\ATLMFC\include"/>
@@ -173,6 +176,7 @@
 					<Add directory="D:/Code/C++/OpenGL/Wavepool/include"/>
 					<Add directory="D:/Code/C++/OpenGL/Wavepool/lib/GLFW/include"/>
 					<Add directory="D:/Code/C++/OpenGL/Wavepool/lib/GLAD/include"/>
+					<Add directory="D:/Code/C++/OpenGL/Wavepool/lib/asio/include"/>
 					<Add directory="D:/Code/C++/OpenGL/Wavepool/lib/GLFW/src"/>
 					<Add directory="D:/Code/C++/OpenGL/Wavepool/cmake-build-debug/lib/GLFW/src"/>
 					<Add directory="D:\Software\Code\VisualStudio\VC\Tools\MSVC\14.25.28610\ATLMFC\include"/>

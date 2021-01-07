@@ -7,11 +7,11 @@ C_FLAGS = /DWIN32 /D_WINDOWS /Zi /Ob0 /Od /RTC1 -MDd
 
 C_DEFINES = 
 
-C_INCLUDES = -ID:\Code\C++\OpenGL\Wavepool\include -ID:\Code\C++\OpenGL\Wavepool\lib\GLFW\include -ID:\Code\C++\OpenGL\Wavepool\lib\GLAD\include 
+C_INCLUDES = -ID:\Code\C++\OpenGL\Wavepool\include -ID:\Code\C++\OpenGL\Wavepool\lib\GLFW\include -ID:\Code\C++\OpenGL\Wavepool\lib\GLAD\include -ID:\Code\C++\OpenGL\Wavepool\lib\asio\include 
 
 CXX_FLAGS = /DWIN32 /D_WINDOWS /GR /EHsc /Zi /Ob0 /Od /RTC1 -MDd  
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -ID:\Code\C++\OpenGL\Wavepool\include -ID:\Code\C++\OpenGL\Wavepool\lib\GLFW\include -ID:\Code\C++\OpenGL\Wavepool\lib\GLAD\include 
+CXX_INCLUDES = -ID:\Code\C++\OpenGL\Wavepool\include -ID:\Code\C++\OpenGL\Wavepool\lib\GLFW\include -ID:\Code\C++\OpenGL\Wavepool\lib\GLAD\include -ID:\Code\C++\OpenGL\Wavepool\lib\asio\include 
 

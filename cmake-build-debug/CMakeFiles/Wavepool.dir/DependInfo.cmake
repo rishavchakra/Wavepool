@@ -14,6 +14,7 @@ set(CMAKE_C_TARGET_INCLUDE_PATH
   "../include"
   "../lib/GLFW/include"
   "../lib/GLAD/include"
+  "../lib/asio/include"
   )
 set(CMAKE_DEPENDS_CHECK_CXX
   "D:/Code/C++/OpenGL/Wavepool/src/main.cpp" "D:/Code/C++/OpenGL/Wavepool/cmake-build-debug/CMakeFiles/Wavepool.dir/src/main.cpp.obj"
@@ -25,6 +26,7 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "../include"
   "../lib/GLFW/include"
   "../lib/GLAD/include"
+  "../lib/asio/include"
   )
 
 # Targets to which this target links.
