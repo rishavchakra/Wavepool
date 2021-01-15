@@ -3,8 +3,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/Wavepool.dir/src/main.cpp.obj"
   "Wavepool.exe"
   "Wavepool.exe.manifest"
-  "Wavepool.lib"
   "Wavepool.pdb"
+  "libWavepool.dll.a"
 )
 
 # Per-language clean rules from dependency scanning.

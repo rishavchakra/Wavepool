@@ -8,15 +8,21 @@ set(CMAKE_EXE_LINKER_FLAGS "-static")
 message("Source directory: " "${CMAKE_SOURCE_DIR}")
 message("Compiler: " ${CMAKE_CXX_COMPILER_ID})
 
+set (project_source
+		src/main.cpp)
+
+#[[set (project_headers
+		)]]
+
 #[[         Adding additional non-compiled, non-library dependencies       ]]
-set (dependencies
+set (additional_dependencies
 #		Graphics libraries
 		${CMAKE_SOURCE_DIR}/lib/GLAD/src/glad.c)
-message("Extra dependencies " "${dependencies}")
+message("Extra dependencies " "${additional_dependencies}")
 
 add_executable(Wavepool
-		src/main.cpp
-		"${dependencies}")
+		${project_source}
+		"${additional_dependencies}")
 
 
 

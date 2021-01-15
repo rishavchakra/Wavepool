@@ -7,7 +7,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_CHECK_C
   "D:/Code/C++/OpenGL/Wavepool/lib/GLAD/src/glad.c" "D:/Code/C++/OpenGL/Wavepool/cmake-build-debug/CMakeFiles/Wavepool.dir/lib/GLAD/src/glad.c.obj"
   )
-set(CMAKE_C_COMPILER_ID "MSVC")
+set(CMAKE_C_COMPILER_ID "GNU")
 
 # The include file search paths:
 set(CMAKE_C_TARGET_INCLUDE_PATH
@@ -19,7 +19,7 @@ set(CMAKE_C_TARGET_INCLUDE_PATH
 set(CMAKE_DEPENDS_CHECK_CXX
   "D:/Code/C++/OpenGL/Wavepool/src/main.cpp" "D:/Code/C++/OpenGL/Wavepool/cmake-build-debug/CMakeFiles/Wavepool.dir/src/main.cpp.obj"
   )
-set(CMAKE_CXX_COMPILER_ID "MSVC")
+set(CMAKE_CXX_COMPILER_ID "GNU")
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH

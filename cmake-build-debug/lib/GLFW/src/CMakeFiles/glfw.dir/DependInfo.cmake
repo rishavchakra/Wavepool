@@ -20,11 +20,12 @@ set(CMAKE_DEPENDS_CHECK_C
   "D:/Code/C++/OpenGL/Wavepool/lib/GLFW/src/win32_window.c" "D:/Code/C++/OpenGL/Wavepool/cmake-build-debug/lib/GLFW/src/CMakeFiles/glfw.dir/win32_window.c.obj"
   "D:/Code/C++/OpenGL/Wavepool/lib/GLFW/src/window.c" "D:/Code/C++/OpenGL/Wavepool/cmake-build-debug/lib/GLFW/src/CMakeFiles/glfw.dir/window.c.obj"
   )
-set(CMAKE_C_COMPILER_ID "MSVC")
+set(CMAKE_C_COMPILER_ID "GNU")
 
 # Preprocessor definitions for this target.
 set(CMAKE_TARGET_DEFINITIONS_C
-  "_CRT_SECURE_NO_WARNINGS"
+  "UNICODE"
+  "WINVER=0x0501"
   "_GLFW_USE_CONFIG_H"
   "_UNICODE"
   )

@@ -4,6 +4,8 @@ D:/Code/C++/OpenGL/Wavepool/cmake-build-debug/CMakeFiles/install.dir
 D:/Code/C++/OpenGL/Wavepool/cmake-build-debug/CMakeFiles/edit_cache.dir
 D:/Code/C++/OpenGL/Wavepool/cmake-build-debug/CMakeFiles/rebuild_cache.dir
 D:/Code/C++/OpenGL/Wavepool/cmake-build-debug/CMakeFiles/list_install_components.dir
+D:/Code/C++/OpenGL/Wavepool/cmake-build-debug/CMakeFiles/install/strip.dir
+D:/Code/C++/OpenGL/Wavepool/cmake-build-debug/lib/GLFW/CMakeFiles/install/strip.dir
 D:/Code/C++/OpenGL/Wavepool/cmake-build-debug/lib/GLFW/CMakeFiles/uninstall.dir
 D:/Code/C++/OpenGL/Wavepool/cmake-build-debug/lib/GLFW/CMakeFiles/install/local.dir
 D:/Code/C++/OpenGL/Wavepool/cmake-build-debug/lib/GLFW/CMakeFiles/install.dir
@@ -16,3 +18,4 @@ D:/Code/C++/OpenGL/Wavepool/cmake-build-debug/lib/GLFW/src/CMakeFiles/install/lo
 D:/Code/C++/OpenGL/Wavepool/cmake-build-debug/lib/GLFW/src/CMakeFiles/install.dir
 D:/Code/C++/OpenGL/Wavepool/cmake-build-debug/lib/GLFW/src/CMakeFiles/edit_cache.dir
 D:/Code/C++/OpenGL/Wavepool/cmake-build-debug/lib/GLFW/src/CMakeFiles/list_install_components.dir
+D:/Code/C++/OpenGL/Wavepool/cmake-build-debug/lib/GLFW/src/CMakeFiles/install/strip.dir
